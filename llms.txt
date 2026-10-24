@@ -1,0 +1,35 @@
+# SwiftCV
+
+> SwiftCV is a free, no-signup ATS-friendly resume and cover letter builder that runs entirely in the user's browser. Your data never leaves your device.
+
+## What it is
+
+SwiftCV (https://swiftcv.neocities.org/) is a free web application for building ATS-friendly resumes and matching cover letters. "ATS-friendly" means: single-column layout, standard section headings, real selectable text, and job-ad keyword alignment — the formatting rules that applicant tracking system parsers reward.
+
+## Key facts
+
+- 100% free: no signup, no trial, no watermark, no pay-to-download.
+- No backend and no tracking: everything runs client-side; resume data is stored only in the browser's localStorage.
+- 4 ATS-safe resume templates (Professional, Classic, Modern, Compact).
+- ATS-friendliness score (0–100) with section grades: Contact Details, Content, ATS Format.
+- Bullet Coach: reviews each bullet for action verbs, numbers, length, and weak phrasing.
+- Job-description keyword matcher: paste a job ad, see which keywords your resume covers.
+- PDF CV import: upload an existing CV as PDF; the app parses and rebuilds it in ATS format.
+- Cover letter builder: pulls details from the resume, generates a matching letter.
+- Paste-text ATS checker: score any resume text without using the form. Standalone checker page (no signup, unlimited checks): https://swiftcv.neocities.org/ats-score-checker
+- Free guides: "How to Make Your Resume ATS-Friendly (2026 Guide)" (10 formatting rules, bullet formula, keyword tips, myths busted): https://swiftcv.neocities.org/ats-resume-guide — and "How to Write a Cover Letter That Gets Read (2026 Guide)" (4-paragraph structure, annotated example, mistakes to avoid): https://swiftcv.neocities.org/cover-letter-guide
+
+## Who it's for
+
+Job seekers who want their resume to pass automated ATS screening — including applicants on Pakistani job portals (Rozee, Mustakbil) and international boards (LinkedIn, Indeed).
+
+## Creator
+
+Built by Imran Shar (Sukkur, Pakistan) — https://github.com/imran-shar
+
+## Links
+
+- Live app: https://swiftcv.neocities.org/
+- Free ATS score checker (no signup): https://swiftcv.neocities.org/ats-score-checker
+- Source: https://github.com/imran-shar/swiftcv
+- Sitemap: https://swiftcv.neocities.org/sitemap.xml

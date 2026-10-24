@@ -27,7 +27,79 @@
   "operatingSystem": "Web",
   "description": "Free ATS-friendly resume builder with ATS score checker, job keyword matcher, PDF CV import, and cover letter builder. No signup required.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "author": { "@type": "Person", "name": "Imran Shar", "url": "https://github.com/IMRAN-stack53" }
+  "author": { "@type": "Person", "name": "Imran Shar", "url": "https://github.com/imran-shar" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is it really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — completely. No signup, no trial, no watermark, no \"pay to download\". The whole app runs in your browser, so there is nothing to charge for."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I import my old CV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Upload your existing CV as a PDF in the resume builder and SwiftCV will read it and rebuild it in ATS-friendly format. Always review each section after import — automatic parsing is a head start, not magic."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is the ATS score calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your score combines three groups — Contact Details, Content, and ATS Format — each graded A to D. It checks for a parseable email and phone, a solid summary, dated experience with bullets, 5+ skills, sensible length, standard headings, and a single-column layout. The Bullet Coach then reviews every bullet for action verbs, numbers, and weak phrasing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this guarantee my resume passes ATS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No tool can guarantee that — every employer's system is different. What this does is follow every widely-agreed ATS best practice (single column, standard headings, real text, keyword alignment) and score your resume against them, which puts you ahead of most applicants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does my data go?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nowhere. Everything you type is stored only in your own browser (localStorage). Nothing is uploaded to any server — there isn't even a server. Uploaded PDFs are read locally in your browser too."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get a PDF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Click \"Download PDF\" and choose \"Save as PDF\" in the print dialog. The resume prints as clean, selectable text on A4 — exactly what parsers want."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use this for different jobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Tweak the summary, skills, and bullets to mirror each job ad, then re-run the keyword checker — and generate a matching cover letter for each application."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this suitable for jobs in Pakistan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — ATS rules are the same everywhere: single-column layout, standard headings, real text, and job-ad keywords. One local tip: leave CNIC, religion, marital status, and date of birth off your CV — Pakistani portals and recruiters don't need them, and they can trip up automated parsers."
+      }
+    }
+  ]
 }
 </script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a56db'/%3E%3Ctext x='32' y='44' font-family='Arial' font-size='34' font-weight='bold' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
@@ -63,7 +135,7 @@
           <a class="btn btn-ghost btn-lg" href="#cover-letter">Cover Letter</a>
         </div>
         <div class="hero-stats">
-          <div class="stat"><strong>3</strong><span>ATS-safe templates</span></div>
+          <div class="stat"><strong>4</strong><span>ATS-safe templates</span></div>
           <div class="stat"><strong>PDF</strong><span>1-click CV import</span></div>
           <div class="stat"><strong>100</strong><span>ATS score checker</span></div>
           <div class="stat"><strong>$0</strong><span>forever, no signup</span></div>
@@ -228,8 +300,8 @@
           </div>
 
           <div class="card">
-            <h3>📋 Score pasted resume text</h3>
-            <p class="muted">Have a resume somewhere else? Paste its text below for an instant ATS score.</p>
+            <h3>📋 Free ATS Score Checker — no signup</h3>
+            <p class="muted">Check your resume's ATS score in seconds — free, no signup, no limit. Have a resume somewhere else? Paste its text below for an instant ATS score.</p>
             <label>Paste resume text
               <textarea id="paste-input" rows="5" placeholder="Paste your resume text here..."></textarea>
             </label>
@@ -341,6 +413,7 @@
       <details class="card"><summary>Where does my data go?</summary><p>Nowhere. Everything you type is stored only in your own browser (localStorage). Nothing is uploaded to any server — there isn't even a server. Uploaded PDFs are read locally in your browser too.</p></details>
       <details class="card"><summary>How do I get a PDF?</summary><p>Click "Download PDF" and choose "Save as PDF" in the print dialog. The resume prints as clean, selectable text on A4 — exactly what parsers want.</p></details>
       <details class="card"><summary>Can I use this for different jobs?</summary><p>Yes. Tweak the summary, skills, and bullets to mirror each job ad, then re-run the keyword checker — and generate a matching cover letter for each application.</p></details>
+      <details class="card"><summary>Is this suitable for jobs in Pakistan?</summary><p>Yes — ATS rules are the same everywhere: single-column layout, standard headings, real text, and job-ad keywords. One local tip: leave CNIC, religion, marital status, and date of birth off your CV — Pakistani portals and recruiters don't need them, and they can trip up automated parsers.</p></details>
     </div>
   </section>
 
@@ -350,8 +423,15 @@
   <div class="wrap footer-inner">
     <p class="footer-brand"><strong>SwiftCV</strong> — free ATS-friendly resume &amp; cover letter builder.</p>
     <p class="footer-owner">Crafted with care by <strong>Imran Shar</strong> &bull; Sukkur, Pakistan</p>
+    <p class="footer-guides">
+      <a href="/ats-resume-guide">ATS Resume Guide</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="/cover-letter-guide">Cover Letter Guide</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="/ats-score-checker">Free ATS Score Checker</a>
+    </p>
     <p class="footer-social">
-      <a href="https://github.com/IMRAN-stack53" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/imran-shar" target="_blank" rel="noopener">GitHub</a>
       <span aria-hidden="true">&bull;</span>
       <a href="https://linkedin.com/in/imran-shar-946106374" target="_blank" rel="noopener">LinkedIn</a>
       <span aria-hidden="true">&bull;</span>
